@@ -1,0 +1,124 @@
+/* Add this CSS to disable scrolling */
+body.no-scroll {
+    overflow: hidden;
+}
+.loader {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#floating-button {
+    /* display: none; */
+    color: #fff !important;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    line-height: 0;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transform: rotate(-180deg) !important;
+    transform: rotate(-180deg) !important;
+    width: 40px !important;
+    -webkit-writing-mode: tb-rl !important;
+    -ms-writing-mode: tb-rl !important;
+    writing-mode: tb-rl !important;
+    z-index: 1000;
+    background: #006eff;
+    height: 150px !important;
+    top: 33%;
+    padding: 5px 10px !important;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 99;
+}
+
+#overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-container {
+    position: fixed;
+    right: -25%;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.form-container.open {
+    right: 0;
+}
+
+#close-form-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.contact-form h2 {
+    margin-bottom: 40px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.message {
+    resize: none;
+}
+
+.default-btn.btn-blue {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.alert {
+    display: none;
+}

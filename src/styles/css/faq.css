@@ -1,0 +1,36 @@
+/* faq_section.css */
+.btn.btn-link {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100%;
+    text-align: left;
+    color: #007bff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.btn.btn-link .icon {
+    font-size: 1.5rem;
+}
+
+.collapse.show {
+    display: block;
+}
+.faq-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.faq-item .card {
+    width: 70%;
+}
+.faq-hd {
+    margin-bottom: 30px;
+}
+.card button[aria-expanded="true"]{
+    box-shadow: 0px 50px 100px 0px rgba(64, 1, 4, 0.1),
+    0px -6px 0px 0px rgba(248, 99, 107, 0.004);
+}
